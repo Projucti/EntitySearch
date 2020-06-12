@@ -27,7 +27,7 @@ public class MyResource {
 
     @POST
     @Path("add")
-    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)
     public WikiData createWikiData(WikiData wikidata)
     {
         repository.createData(wikidata);
