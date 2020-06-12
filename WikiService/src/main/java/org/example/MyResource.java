@@ -10,13 +10,14 @@ import java.util.List;
 public class MyResource {
     WikiServiceRepository repository= new WikiServiceRepository();
     @GET
+    @Path("/fetchDocx")
     @Produces(MediaType.APPLICATION_JSON)
-    public List<WikiData> getData()
+    public List<WikiData> getData(@QueryParam("q") String queryTerms)
     {
         System.out.println("Called from resource");
         return repository.getAllWikiData();
     }
-
+/*
     @GET
     @Path("wiki/{label}")
     @Produces(MediaType.APPLICATION_JSON)
@@ -24,6 +25,8 @@ public class MyResource {
     {
         return repository.getData(label);
     }
+    */
+
 
     @POST
     @Path("add")
