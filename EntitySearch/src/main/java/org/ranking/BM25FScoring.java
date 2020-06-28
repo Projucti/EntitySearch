@@ -2,6 +2,13 @@ package org.ranking;
 
 import java.io.IOException;
 
+/**
+* 
+* NLP pipeline class to rank the documents using BM25F scoring algorithm. 
+*
+* @author Aman Sharma
+*/
+
 import java.util.ArrayList;
 
 import java.util.Collections;

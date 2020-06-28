@@ -2,6 +2,13 @@ package org.ranking;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+/**
+* 
+* Response POJO for ScoringService API.
+*
+* @author Aman Sharma
+*/
+
 class ServiceResponse {
 
 	@JsonProperty

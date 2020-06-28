@@ -15,7 +15,13 @@
 		<maven.compiler.source>1.6</maven.compiler.source>
 		<maven.compiler.target>1.6</maven.compiler.target>
 	</properties>
-
+	<repositories>
+		<repository>
+			<id>maven.restlet.org</id>
+			<name>maven.restlet.org</name>
+			<url>http://maven.restlet.org</url>
+		</repository>
+	</repositories>
 
 	<dependencies>
 		<dependency>
@@ -135,12 +141,19 @@
 			<version>2.2</version>
 		</dependency>
 
-<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
-<dependency>
-    <groupId>com.fasterxml.jackson.core</groupId>
-    <artifactId>jackson-databind</artifactId>
-    <version>2.0.0</version>
-</dependency>
+		<!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.0.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.restlet.jee/org.restlet -->
+		<dependency>
+			<groupId>org.restlet.jee</groupId>
+			<artifactId>org.restlet</artifactId>
+			<version>2.1.1</version>
+		</dependency>
+
 
 	</dependencies>
 </project>
